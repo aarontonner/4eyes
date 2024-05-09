@@ -1,0 +1,58 @@
+---
+title: "Testimonials | 4 Eyes Photography"
+description: "Join us on this extraordinary journey, where creativity knows no limits, and every moment is captured with passion and precision."
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "/testimonials/"
+eleventyNavigation:
+  key: testimonials
+  order: 600
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/critical.css" />
+<link rel="stylesheet" href="/assets/css/testimonials.css" />
+<link rel="stylesheet" href="/assets/css/components.css" />
+{% endblock %} {% block body %}
+
+<!-- ============================================ -->
+<!--                    Banner                      -->
+<!-- ============================================ -->
+
+<div id="banner-559">
+  <div class="cs-container">
+    <span class="cs-int-topper">the 4Eyes photography experience</span>
+    <span class="cs-int-title">Words Of The Bride & Groom</span>
+    <div class="cs-breadcrumbs">
+      <a href="/" class="cs-link">Home</a>
+      <a href="/testimonials" class="cs-link cs-active">Testimonials</a>
+    </div>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="
+        https://4eyesphotography.ca/wp-content/uploads/2022/06/engagement-winning-photo-Banff-6.jpg
+      "
+    />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="
+        https://4eyesphotography.ca/wp-content/uploads/2022/06/engagement-winning-photo-Banff-6.jpg
+      "
+    />
+    <img
+      loading="lazy"
+      decoding="async"
+      src="https://4eyesphotography.ca/wp-content/uploads/2022/06/engagement-winning-photo-Banff-6.jpg"
+      alt="testimonials"
+      width="1280"
+      height="568"
+      aria-hidden="true"
+    />
+  </picture>
+</div>
+
+{% endblock %}

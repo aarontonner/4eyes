@@ -1,0 +1,58 @@
+---
+title: "Contact Us | 4 Eyes Photography"
+description: "Contact us here!"
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "/contact/"
+eleventyNavigation:
+  key: Contact
+  order: 500
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/contact.css" />
+<link rel="stylesheet" href="/assets/css/critical.css" />
+<link rel="stylesheet" href="/assets/css/components.css" />
+{% endblock %} {% block body %}
+
+<!-- ============================================ -->
+<!--                    Banner                      -->
+<!-- ============================================ -->
+
+<div id="banner-559">
+  <div class="cs-container">
+    <span class="cs-int-topper">4 Eyes Photography</span>
+    <span class="cs-int-title">Contact Us</span>
+    <div class="cs-breadcrumbs">
+      <a href="/" class="cs-link">Home</a>
+      <a href="/contact" class="cs-link cs-active">Contact</a>
+    </div>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="
+        https://4eyesphotography.ca/wp-content/uploads/2021/02/contact-us-1.jpg
+      "
+    />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="
+        https://4eyesphotography.ca/wp-content/uploads/2021/02/contact-us-1.jpg
+      "
+    />
+    <img
+      loading="lazy"
+      decoding="async"
+      src="https://4eyesphotography.ca/wp-content/uploads/2021/02/contact-us-1.jpg"
+      alt="contact 4 eyes photography"
+      width="1280"
+      height="568"
+      aria-hidden="true"
+    />
+  </picture>
+</div>
+
+{% include 'components/form.html' %} {% endblock %}
